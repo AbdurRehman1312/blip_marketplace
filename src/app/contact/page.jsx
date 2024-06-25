@@ -53,7 +53,7 @@ const ContactUs = () => {
                 Contact
               </h1>
               <h1 className="capitalize font-bold md:text-5xl text-3xl">
-                Let&apos;s get in touch
+                Let's get in touch
               </h1>
               <div className="flex md:items-start items-center md:flex-row flex-col gap-3 mt-5">
                 <img src={images.location} alt="" className="w-6" />
