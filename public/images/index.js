@@ -13,6 +13,7 @@ const images = {
     arrow: '/images/arrow.png',
     drone: '/images/drone.png',
     qrcode: '/images/qrcode.png',
+    location: '/images/location.png',
 };
 
 export default images;

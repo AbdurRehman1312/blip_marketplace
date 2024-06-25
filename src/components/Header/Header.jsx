@@ -4,19 +4,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import images from '/public/images/index'
 const links = [
-    { name: 'Home', path: '/' },
-    { name: 'How it Works', path: '/', id: 'howitworks' },
-    { name: 'Delivery Zone', path: '/', id: 'delivery-zone' },
-    { name: 'Partners', path: '/', id: 'delivery-zone' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Home', pathname: '/' },
+    { name: 'How it Works', pathname: '/', id: 'howitworks' },
+    { name: 'Delivery Zone', pathname: '/', id: 'delivery-zone' },
+    { name: 'Partners', pathname: '/', id: 'delivery-zone' },
+    { name: 'Contact', pathname: '/contact' },
 ];
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [showHeader, setShowHeader] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(window.scrollY);
-
+    const [lastScrollY, setLastScrollY] = useState(0);
     useEffect(() => {
+        setLastScrollY(window.scrollY);
+
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
             setShowHeader(currentScrollY < lastScrollY);
@@ -61,7 +62,7 @@ const Header = () => {
                             <ul className='list-none lg:flex lg:gap-6 xl:gap-16 justify-between items-center'>
                                 {links.map((link, index) => (
                                     <li key={index} className='text-nowrap lg:text-lg xl:text-xl font-bold'>
-                                        <Link href={link.path} onClick={() => handleNavLinkClick(link)}>
+                                        <Link href={link.pathname} onClick={() => handleNavLinkClick(link)}>
                                             {link.name}
                                         </Link>
                                     </li>
@@ -92,7 +93,7 @@ const Header = () => {
                                 <ul className='items-center gap-3 flex flex-col justify-center'>
                                     {links.map((link, index) => (
                                         <li key={index} className='inline-block text-lg font-medium mx-4'>
-                                            <Link href={link.path} onClick={() => { setToggle(false); handleNavLinkClick(link); }}>
+                                            <Link href={link.pathname} onClick={() => { setToggle(false); handleNavLinkClick(link); }}>
                                                 {link.name}
                                             </Link>
                                         </li>
