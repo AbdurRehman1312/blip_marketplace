@@ -23,9 +23,9 @@ const TermsServices = () => {
           </div>
           <div className="mt-16 flex flex-col gap-8">
             <p className="text-lg text-center px-2">
-              These Terms of Service ("Terms") govern your use of the services
-              provided by Blip Delivery Inc. ("Blip," "we," "us," or "our") via
-              our mobile application ("App") and website ("Site"). By accessing
+              These Terms of Service (&quot;Terms&quot;) govern your use of the services
+              provided by Blip Delivery Inc. (&quot;Blip,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) via
+              our mobile application (&quot;App&quot;) and website (&quot;Site&quot;). By accessing
               or using our services, you agree to be bound by these Terms.
             </p>
             <div className=" flex flex-col gap-4">

@@ -22,11 +22,11 @@ const PrivacyPolicy = () => {
           </div>
           <div className="mt-16 flex flex-col gap-8">
             <p className="text-lg text-center px-2">
-              Blip Delivery Inc. ("Blip," "we," "us," or "our") respects your
+              Blip Delivery Inc. (&quot;Blip,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your
               privacy and is committed to protecting the personal information
               you share with us. This Privacy Policy explains how we collect,
               use, disclose, and safeguard your information when you use our
-              services via our mobile application ("App") and website ("Site").
+              services via our mobile application (&quot;App&quot;) and website (&quot;Site&quot;).
             </p>
             <div className=" flex flex-col gap-4">
               <h1 className="font-bold md:text-3xl text-2xl">
