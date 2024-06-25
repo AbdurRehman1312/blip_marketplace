@@ -141,3 +141,12 @@ input::-webkit-inner-spin-button {
   background-position: top;
   background-repeat: no-repeat;
 }
+::-webkit-scrollbar {
+  width: 7px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  border: 10px solid #252525;
+  border-radius: 10px;
+}
