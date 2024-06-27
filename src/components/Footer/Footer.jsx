@@ -61,7 +61,7 @@ const Footer = () => {
           <div className='w-24 md:w-28 lg:w-24 xl:w-28'>
             <Image src={images.logo} alt="" layout="responsive" objectFit="cover" width={100} height={100}  />
           </div>
-          <a href='/' className='bg-[#252525] rounded-full h-[40px] p-2.5 w-[40px] flex justify-center items-center mt-5'>
+          <a href='https://www.instagram.com/blipdelivery?utm_source=qr&igsh=MzNlNGNkZWQ4Mg==' target="_blank" className='bg-[#252525] rounded-full h-[40px] p-2.5 w-[40px] flex justify-center items-center mt-5'>
             <Image src={images.insta} alt="" layout="responsive" objectFit="cover" width={100} height={100} />
           </a>
           <p className='text-center px-2'>All Blip Delivery drone operators are FAA Part 107 certified and adhere to all FAA regulations and safety guidelines. Our drones are equipped with advanced safety features and are maintained to the highest standards. Blip Delivery is committed to ensuring secure and efficient deliveries, prioritizing the safety of our customers and communities. For more information about our safety practices and policies, please visit our Safety and Compliance page.</p>
